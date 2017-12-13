@@ -2,6 +2,12 @@
 PYSPREAD
 ========
 
+**admica's changes**
+
+matplotlib module naming is different in centos, src attempts original imports then falls back on error to allow usage on centos.
+
+(Testing done in Centos 7.4)
+
 **Installation**
 
 
