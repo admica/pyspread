@@ -67,7 +67,10 @@ Provides
 import wx
 import wx.aui
 import matplotlib
-from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg
+try:
+    from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg
+except ImportError:
+    from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvasWxAgg
 import wx.lib.colourselect as csel
 from wx.lib.intctrl import IntCtrl, EVT_INT
 import wx.lib.agw.flatnotebook as fnb
