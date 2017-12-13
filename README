@@ -4,7 +4,7 @@ PYSPREAD
 
 **admica's changes**
 
-matplotlib module naming is different in centos, src attempts original imports then falls back on error to allow usage on centos.
+matplotlib module naming is different in centos, _chart_dialog.py attempts original imports then falls back on error to allow usage on centos.
 
 (Testing done in Centos 7.4)
 
